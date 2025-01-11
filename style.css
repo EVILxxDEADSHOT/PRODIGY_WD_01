@@ -1,0 +1,75 @@
+/* General Page Styling */
+body {
+    margin: 0;
+    font-family: 'Verdana', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Fixed Navigation Bar Styling */
+.menu-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #444;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 0;
+    z-index: 100;
+    transition: background-color 0.4s, box-shadow 0.4s;
+}
+
+.menu-bar.scrolled {
+    background-color: #222;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-bar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-bar a:hover {
+    background-color: #555;
+    color: #eaeaea;
+    border-radius: 4px;
+}
+
+/* Section Styling */
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+#home {
+    background: url('https://source.unsplash.com/1920x1080/?landscape') no-repeat center/cover;
+}
+
+#about {
+    background: url('https://source.unsplash.com/1920x1080/?architecture') no-repeat center/cover;
+}
+
+#services {
+    background: url('https://source.unsplash.com/1920x1080/?technology') no-repeat center/cover;
+}
+
+#contact {
+    background: url('https://source.unsplash.com/1920x1080/?office') no-repeat center/cover;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
